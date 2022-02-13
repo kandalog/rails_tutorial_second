@@ -68,4 +68,10 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
+  # ダイジェストが存在しない場合のテスト
+  # 自動ログインを実装した場合に必要なテスト
+  test "authenticated? should return false for a user with nil digest" do
+    assert_not @user.authenticated?('')
+  end
+  
 end
