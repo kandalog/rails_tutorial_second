@@ -1,14 +1,12 @@
-# create!ユーザーが向こうな場合falseではなく例外を発生させる
-# メインのサンプルユーザーを1人作成する
+# ユーザー
 User.create!(name:  "Example User",
              email: "example@railstutorial.org",
              password:              "foobar",
              password_confirmation: "foobar",
-             admin: true,
+             admin:     true,
              activated: true,
              activated_at: Time.zone.now)
 
-# 追加のユーザーをまとめて生成する
 99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -18,10 +16,10 @@ User.create!(name:  "Example User",
                password:              password,
                password_confirmation: password,
                activated: true,
-             activated_at: Time.zone.now)
+               activated_at: Time.zone.now)
 end
 
-# ユーザーの一部を対象にマイクロポストを生成する
+# マイクロポスト
 users = User.order(:created_at).take(6)
 50.times do
   content = Faker::Lorem.sentence(word_count: 5)
