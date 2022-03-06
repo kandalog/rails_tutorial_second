@@ -7,7 +7,7 @@ User.create!(name:  "Example User",
              activated_at: Time.zone.now)
 
 User.create!(name:  "Sample user",
-             email: "sample12496user@gmail.com	",
+             email: "sample12496user@gmail.com",
              password:              "password",
              password_confirmation: "password",
              admin: false,
@@ -15,7 +15,7 @@ User.create!(name:  "Sample user",
              activated_at: Time.zone.now)
 
 User.create!(name:  "田中",
-             email: "tanaka124sample13@gmail.com	",
+             email: "tanaka124sample13@gmail.com",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: false,
@@ -23,7 +23,7 @@ User.create!(name:  "田中",
              activated_at: Time.zone.now)
 
 User.create!(name:  "山田",
-             email: "yamada125823sample@gmail.com	",
+             email: "yamada125823sample@gmail.com",
              password:              "foobar",
              password_confirmation: "foobar",
              admin: false,
